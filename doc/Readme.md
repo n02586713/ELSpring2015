@@ -1,3 +1,6 @@
-Documentation Directory.
-All your documentation should go here.
+Daniel Putterman
+1/31/2015
+
+My Documentation Directory.
+All my documentation will go here.
 
