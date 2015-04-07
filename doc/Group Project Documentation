@@ -1,0 +1,48 @@
+Embedded Linux – Project Documentation
+
+1) Project Description
+"Develop a mechanism that can take still photos looking in any possible direction, controlled by a web interface. You must be able to position the camera at the end of a boom, aim it in any direction relative to some fixed reference frame, take a picture and send it back to some connected location. Develop a web interface to display the images; you will have to think about how you will construct a frame of reference relative to which the camera angles can be specified."
+
+2) Project Goals
+Our goal for the project is to get the servo to move when given commands from a web interface. When the servo is in the position given, it should take a picture or stream a video and send it back to the interface and display it. Also, all this should be mounted on the boom.
+
+3) Plans
+We plan to use a Continuous servo motor to move the Pi Camera 360 degrees in any direction. The boom will be 3D printed and designed using Google SketchUp. The Pi camera will take the picture/stream and send it back the interface to display it.
+
+4) Project Components
+Motor Movements and Commands – Receives commands for the continuous servo from the interface and working with the 16 channel servo driver to make the servo rotate.
+Web Interface (movement and display) - Sends commands through a web interface with sliders that move the servo motor, and in turn, the camera; displaying the signal from the camera on a panel within the web frame.
+Camera Functions - tags and saves pictures taken from the Pi Camera, working with the camera and code to know where the camera is at any given moment & sending the picture to the web.
+Camera Boom - designing and putting into production, the camera boom and other mounts in which the camera and motors and attached to.
+
+5) Progress
+Motor - Motor not moving yet; still in beginning stages of working with 16 channel servo driver and the continuous servo motor.
+Web Interface - Mock website already made, but still needs to receive and send commands accordingly. Good progress so far.
+Camera - Working perfectly. Already streaming and taking pictures, when the project is more along, we will incorporate a stream using the Pi Camera.
+Boom - being designed on Google SketchUp, soon to be done and printed. Using measurements of motor and camera to design mounts and boom.
+
+6) Summarize Project (group point of view, do Friday)
+The Camera and Web interface were the easy aspects of the project so far. The Camera was easy to work with and our group knew web programming well enough to program a web interface fairly quickly and efficiently. We are having troubles using the motor and the driver, but we are working diligently to get that working. The 3D software is also somewhat complicated and we hope to have a full understanding of it within the next couple of days.
+
+7) Next weeks
+In the next 2 weeks, we would like to see the camera and motor receiving commands from the web interface (mostly communication between the separate parts), the camera functioning and displaying the pictures to the web interface, and a prototype or finished boom to hold everything. In 3-4 weeks, we plan on testing the finished product and putting the finishing touches on our project.
+
+8) Group Members and contributions
+Ferrao, Lionel -
+·         Working on servo motor, getting it to run with GPIO.
+McCabe, Michael -
+·         Configured camera and wrote python script for streaming and saving pictures with directional commands.
+Putterman, Danield -
+·         Working on servo motor, getting it to run with GPIO.
+·         Code written for servo motion with 360 degrees of movement.
+Inglese, Christopher -
+·         Created sample web interface with sliders and images.
+·         Researching command line interfacing & program executing from PHP
+Calonge, Jhonathan -
+·         Investigating MJPEG streaming and helping Christopher with an online GUI to control servo motor.
+MacLarion, Sean N02788929 -
+·         Researched code for Servo motor and designs for camera boom.
+·         Wrote Documentation
+·         Designing Boom with Google SketchUp
+·         Coding Motor Moving Scripts and working with Motor Hardware
+·         Wrote Parts List
